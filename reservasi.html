@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservasi Kelas & Trial Membership</title>
+    <link rel="stylesheet" href="reservasi.css">
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Form Reservasi</h2>
+
+    <form action="#" method="POST">
+
+        <div class="form-group">
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="contoh@email.com" required>
+        </div>
+
+        <div class="form-group">
+            <label for="hp">Nomor WhatsApp / HP</label>
+            <input type="tel" id="hp" name="hp" placeholder="0812xxxx" required>
+        </div>
+
+        <div class="row">
+            <div class="form-group flex-2">
+                <label for="tanggal">Tanggal Reservasi</label>
+                <input type="date" id="tanggal" name="tanggal" required>
+            </div>
+            <div class="form-group flex-1">
+                <label for="jam">Jam</label>
+                <input type="time" id="jam" name="jam" required>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="program">Jenis Program</label>
+            <select id="program" name="program" required>
+                <option value="" disabled selected>Pilih Program</option>
+                <option value="trial">Trial Membership (Gratis)</option>
+                <option value="yoga">Yoga Class</option>
+                <option value="zumba">Zumba Class</option>
+                <option value="muaythai">Muay Thai</option>
+                <option value="personal-trainer">Personal Trainer Session</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="cabang">Cabang Lokasi</label>
+            <select id="cabang" name="cabang" required>
+                <option value="" disabled selected>Pilih Cabang</option>
+                <option value="jakarta">Jakarta</option>
+                <option value="bandung">Bandung</option>
+                <option value="surabaya">Surabaya</option>
+                <option value="bali">Bali</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="catatan">Catatan Khusus (Opsional)</label>
+            <textarea id="catatan" name="catatan"
+                placeholder="Keluhan medis atau permintaan khusus lainnya..."></textarea>
+        </div>
+
+        <div class="checkbox-group">
+            <input type="checkbox" id="konfirmasi" name="konfirmasi" required>
+            <label for="konfirmasi">
+                Saya setuju dengan syarat dan ketentuan serta bersedia dihubungi untuk konfirmasi jadwal.
+            </label>
+        </div>
+
+        <button type="submit">Kirim Reservasi Sekarang</button>
+
+        <a href="index.html" class="back-link">← Kembali ke Beranda</a>
+
+    </form>
+</div>
+
+</body>
+</html>
